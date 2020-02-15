@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Raleway ExtraBold";
+  src: url('../fonts/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: "Raleway SemiBold";
+  src: url('../fonts/Raleway-SemiBold.ttf')
+}
+
+body {
+  font-family: "Raleway SemiBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  color: #808083;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  color: inherit;
+}
+
+div.report {
+  text-align: left;
+}

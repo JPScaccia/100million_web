@@ -1,0 +1,53 @@
+#signin_row1 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/laptop.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#signin_row1Tint {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 113, 206, 0.7);
+}
+
+#signin_row1Header {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  letter-spacing: 18px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#signin_row2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#signin_row2Body {
+  font-size: 18px;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+#signin_row2Button {
+  display: inline-block;
+  letter-spacing: 8px;
+  text-decoration: none;
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 14px 20px;
+  color: #A2D45E;
+  border: 3px solid #A2D45E;
+  text-transform: uppercase;
+  text-align: center;
+}

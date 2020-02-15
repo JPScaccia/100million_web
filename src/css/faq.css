@@ -1,0 +1,77 @@
+#faq_row1 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/laptop.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#faq_row1Tint {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 113, 206, 0.7);
+}
+
+#faq_row1Header {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 18px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#faq_row1Body {
+  line-height: 23px;
+  padding-bottom: 30px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+#faq_row2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#faq_row2Col1 {
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 20px;
+}
+
+#faq_row2Col2 {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
+.faq_row2ColItemHeaderGreen {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  color: #A2D45E;
+}
+
+.faq_row2ColItemHeaderBlue {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  color: #0071CE; 
+}
+
+.faq_row2ColItemHeaderLightBlue {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+  color: #00B2E3;
+}
+
+
+.faq_row2ColItemBody {
+  justify-content: left;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 30px 0px 30px 40px;
+}

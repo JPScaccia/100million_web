@@ -1,0 +1,113 @@
+#surveys_sheets_row1 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+#surveys_sheets_row1Header {
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 32px;
+}
+
+.surveys_sheetsNextButton {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 14px 20px;
+  color: #0071CE;
+  border: 3px solid #0071CE;
+}
+
+table, tr, td {
+  border: none;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  table-layout: fixed;
+  border-spacing: 20px 10px;
+  border-collapse: separate;
+}
+
+table td input.radio {
+  border:1px;
+  display: block;
+  margin:0 auto;
+}
+
+table td span {
+  display: block;
+  text-align:left;
+}
+
+table th.theader {
+  word-wrap: normal;
+  word-break: keep-all;
+  width: 20%;
+}
+
+table th.theaderphrase {
+  width: 380px;
+}
+
+table td.phrase {
+  min-width: 380px;
+}
+
+table td.aItem {
+  vertical-align: top;
+}
+
+table tr.item {
+  height: 70px;
+}
+
+span.leftspan {
+  display: block;
+  text-align:left;
+}
+
+div.sheetIntro {
+  text-align: left;
+}
+
+div.form {
+  width: 200px;
+  border: 1px solid blackx;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+div .form .inputField {
+  width: 200px;
+  border: 1px solid redx;
+}
+
+div .form .inputContainer {
+  width: 200px;
+  border: 1px solid redx;
+}
+
+div .form .formError {
+  width: 400px;
+  height: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+div .form .inputError {
+  width: 400px;
+  height: 20px;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}

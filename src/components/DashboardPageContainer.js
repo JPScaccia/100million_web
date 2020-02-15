@@ -1,0 +1,65 @@
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import setDashboardReportActionCreator from '../actions/setDashboardReportActionCreator'
+import fetchAllFinishedSurveysActionCreator from '../actions/fetchAllFinishedSurveysActionCreator'
+import DashboardComponent from './DashboardComponent'
+
+
+class DashboardPageContainer extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  async componentDidMount() {
+    const { isAuthenticated, userId, finishedSurveys,
+      userSurveyId, fetchAllFinishedSurveys, setDashboardReport } = this.props
+
+    if (isAuthenticated) {
+      const finishedSurveys = await fetchAllFinishedSurveys(userId)
+
+      if (finishedSurveys && finishedSurveys.length > 0) {
+        if (userSurveyId) {
+          await setDashboardReport(userSurveyId)
+        }
+        else {
+          await setDashboardReport(finishedSurveys[0].id)
+        }
+      }
+    }
+  }
+
+  render() {
+    const { isAuthenticated, finishedSurveys } = this.props
+
+    return (
+      <DashboardComponent
+        isAuthenticated={isAuthenticated}
+        finishedSurveys={finishedSurveys} />
+    )
+  }
+}
+
+const mapStateToProps = (state) => {
+  var props = {
+    initialValues: {
+    },
+    isAuthenticated: state.authReducer.isAuthenticated,
+    userSurveyId: state.dashboardReducer.userSurveyId,
+    userId: state.authReducer.user.id,
+    finishedSurveys: state.dashboardReducer.finishedSurveys || []
+  }
+
+  return props
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchAllFinishedSurveys: (userId) => dispatch(fetchAllFinishedSurveysActionCreator(userId)),
+    setDashboardReport: (userSurveyId) => dispatch(setDashboardReportActionCreator(userSurveyId)),
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(DashboardPageContainer)

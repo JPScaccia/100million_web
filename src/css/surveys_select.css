@@ -1,0 +1,15 @@
+.surveySelectButton {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 14px 20px;
+  color: #0071CE;
+  border: 3px solid #0071CE;
+}
+
+#surveys_selectRow3 {
+  padding-bottom: 40px;
+}

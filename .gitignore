@@ -1,0 +1,6 @@
+log.txt
+node_modules/
+.env
+.env_stage
+.env_prod
+logs/

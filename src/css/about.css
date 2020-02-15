@@ -1,0 +1,239 @@
+#about_row1 {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/laptop.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#about_row1Header {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  letter-spacing: 3px;
+  font-size: 32px;
+}
+
+#about_row1Tint {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 178, 227, 0.7);
+}
+
+#about_row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#about_row2Col1 {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  width: 45%;
+  min-width: 500px;
+}
+
+#about_lightBulb {
+  max-width: 100%;
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#about_row2Col2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 120px;
+  padding-bottom: 40px;
+  width: 55%;
+  color: #808083;
+  min-width: 500px;
+}
+
+#about_rmc2Logo {
+  max-width: 240px;
+}
+
+#about_row2Col2Body {
+  font-family: "Raleway SemiBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#about_row2Col2Approach {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  color: #00B2E3;
+}
+
+#about_row3 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #A2D45E;
+  font-family: "Raleway SemiBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 18px;
+}
+
+#about_row3Col1 {
+  line-height: 23px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  width: 33.33%;
+  background-color: #A2D45E;
+}
+
+#about_row3Col2 {
+  line-height: 23px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  width: 33.33%;
+  background-color: #0071CE;
+}
+
+#about_row3Col3 {
+  line-height: 23px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  width: 33.33%;
+  background-color: #00B2E3;
+}
+
+.about_row3Header {
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+#about_row4 {
+  display: static;
+}
+
+#about_row4Header {
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#about_tableContainer {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#about_table {
+  border-collapse: collapse;
+  border-bottom: 2px solid #808083;
+}
+
+.about_tableRow {
+  border-top: 2px solid;
+  border-color: #808083;
+}
+
+.about_tableCol1 {
+  width: 30%;
+  vertical-align: top;
+  position: relative;
+}
+
+.about_tableCol1::after {
+  content: '';
+  background-color: #808083;
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  bottom: 20px;
+  width: 2px;
+}
+
+.about_tableCol2 {
+  min-width: 70%;
+  justify-content: left;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 30px 0px 30px 40px;
+}
+
+.about_left {
+  display: table-cell;
+  padding: 30px 10px;
+  font-size: 22px;
+  color: #0071CE; 
+}
+
+.about_rightBlue {
+  display: table-cell; 
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  font-size: 22px;
+  color: #00B2E3;
+}
+
+.about_rightGreen {
+  display:table-cell; 
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  font-size: 22px;
+  color: #A2D45E;
+}
+
+#about_row5 {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#about_row5Header {
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#about_row5Body {
+  font-family: "Raleway SemiBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#about_row5Button {
+  display: inline-block;
+  letter-spacing: 8px;
+  text-decoration: none;
+  font-family: "Raleway ExtraBold", "Lato", "Helvetica Neue", Helvetica, Arial;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding: 14px 20px;
+  color: #00B2E3;
+  border: 3px solid #00B2E3;
+  text-transform: uppercase;
+  text-align: center;
+}

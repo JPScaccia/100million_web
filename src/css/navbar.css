@@ -1,0 +1,107 @@
+div.navbar {
+  z-index: 2;
+  text-align: center;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+div.navbar a {
+  text-decoration: none;
+}
+
+div.navbar caption a:visited {
+  color: #808083;
+}
+
+div.navbar a:hover {
+  color: #2c3e50;
+}
+
+.navbar .caption {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  color: #808083;
+}
+
+.navbar .caption:hover {
+  color: #2c3e50;
+}
+
+#navBarRow1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+#navBarBlueButton {
+  color: #FFFFFF;
+  background-color: #0071CE;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#navBarBlueButton a:visited {
+  color: #FFFFFF;
+}
+
+#navBarLightBlueButton {
+  color: #FFFFFF;
+  background-color: #00B2E3;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#navBarLightBlueButton a:visited {
+  color: #FFFFFF;
+}
+
+#navBarRow2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 8px;
+  color: #2C3E50;
+}
+
+#navBarLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#navBarRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#navBarRow3 {
+  display: flex;
+  flex-direction: row;
+  height: 6px;
+}
+
+#navBarRow3Left {
+  background-color: #00B2E3;
+  width: 50%;
+}
+
+#navBarRow3Right {
+  background-color: #A2D45E;
+  width: 50%;
+}
+
+#navBarLogo {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80px;
+}
