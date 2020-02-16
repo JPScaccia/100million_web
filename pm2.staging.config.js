@@ -12,8 +12,8 @@ module.exports = {
       ref: 'origin/master',
       repo: 'git@bitbucket.org:resrvoir/100million_web.git',
       path: '/var/www/html/100million_web_staging/',
-      'pre-deploy-local': 'bash pre_deploy_local-staging.sh',
-      'post-deploy': 'bash post_deploy-staging.sh'
+      'pre-deploy-local': 'bash pre_deploy_local.sh staging 100million',
+      'post-deploy': 'bash post_deploy.sh staging 100million'
     },
   }
 };
