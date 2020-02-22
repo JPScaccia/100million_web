@@ -2,6 +2,7 @@ import React from 'react'
 import DashboardSelectFinishedSurveyContainer from './DashboardSelectFinishedSurveyContainer'
 import DashboardDownloadReportContainer from './DashboardDownloadReportContainer'
 import DashboardReportIframeContainer from './DashboardReportIframeContainer'
+import DashboardUploadFileButtonContainer from './DashboardUploadFileButtonContainer'
 
 
 const DashboardFinishedSurveysComponent = (props) => {
@@ -11,9 +12,8 @@ const DashboardFinishedSurveysComponent = (props) => {
     <div id="dashboard_report_row1">
       <div id="dashboard_report_col1">
         <DashboardSelectFinishedSurveyContainer />
-        <div>
-          <DashboardDownloadReportContainer />
-        </div>
+        <DashboardDownloadReportContainer />
+        <DashboardUploadFileButtonContainer />
       </div>
       <div id="dashboard_report_col2">
         <DashboardReportIframeContainer />
