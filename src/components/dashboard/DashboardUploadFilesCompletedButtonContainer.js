@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
+import ComponentConsts from '../../consts/ComponentConsts'
 import DashboardUploadFilesCompletedButtonComponent from './DashboardUploadFilesCompletedButtonComponent'
-import uploadFilesCompletedActionCreator from '../actions/uploadFilesCompletedActionCreator'
+import uploadFilesCompletedActionCreator from '../../actions/uploadFilesCompletedActionCreator'
 
 
 class DashboardUploadFilesCompletedButtonContainer extends Component {

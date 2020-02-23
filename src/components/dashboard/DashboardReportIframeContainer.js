@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import IframeResizer from 'iframe-resizer-react'
-import Consts from '../consts/Consts'
+import Consts from '../../consts/Consts'
 
 
 class DashboardReportIframeContainer extends Component {
@@ -10,7 +10,7 @@ class DashboardReportIframeContainer extends Component {
     this.handleLoad = this.handleLoad.bind(this)
   }
 
-  handleLoad(event) {}
+  handleLoad(event) { }
 
   render() {
     const { userSurveyId } = this.props
@@ -26,7 +26,7 @@ class DashboardReportIframeContainer extends Component {
       <IframeResizer
         frameBorder="0"
         src={reportPath}
-        style={{ minWidth: '100%'}} />
+        style={{ minWidth: '100%' }} />
     )
   }
 }

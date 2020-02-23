@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
-import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
+import ComponentConsts from '../../consts/ComponentConsts'
+import RemoteSubmitButtonComponent from '../RemoteSubmitButtonComponent'
 
 
 const DashboardUploadFileButtonComponent = (props) => {

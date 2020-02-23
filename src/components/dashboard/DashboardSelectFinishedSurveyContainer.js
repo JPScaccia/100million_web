@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import setDashboardReportActionCreator from '../actions/setDashboardReportActionCreator'
+import setDashboardReportActionCreator from '../../actions/setDashboardReportActionCreator'
 import { reduxForm, SubmissionError } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
+import ComponentConsts from '../../consts/ComponentConsts'
 import DashboardSelectFinishedSurveyComponent from './DashboardSelectFinishedSurveyComponent'
 
 

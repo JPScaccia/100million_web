@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { reduxForm } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
-//import uploadFilesActionCreator from '../actions/uploadFilesActionCreator'
+import ComponentConsts from '../../consts/ComponentConsts'
+import uploadFilesActionCreator from '../../actions/uploadFilesActionCreator'
 import DashboardUploadFilesComponent from './DashboardUploadFilesComponent'
 import DashboardUploadFilesCompletedButtonContainer from './DashboardUploadFilesCompletedButtonContainer'
 
@@ -45,7 +45,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    //    uploadFile: () => dispatch(uploadFilesActionCreator())
+    uploadFile: () => dispatch(uploadFilesActionCreator())
   }
 }
 

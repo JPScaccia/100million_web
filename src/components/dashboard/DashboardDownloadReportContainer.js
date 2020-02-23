@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { reduxForm, SubmissionError } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
-import fetchDownloadReportUrlActionCreator from '../actions/fetchDownloadReportUrlActionCreator'
+import ComponentConsts from '../../consts/ComponentConsts'
+import fetchDownloadReportUrlActionCreator from '../../actions/fetchDownloadReportUrlActionCreator'
 import DashboardDownloadReportComponent from './DashboardDownloadReportComponent'
 
 
