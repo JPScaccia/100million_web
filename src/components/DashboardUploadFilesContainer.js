@@ -30,10 +30,7 @@ class DashboardUploadFilesContainer extends Component {
           submitting={submitting}
           error={error} />
 
-        <DashboardUploadFilesCompletedButtonContainer
-          onSubmit={handleSubmit(this.handleUpload)}
-          submitting={submitting}
-          error={error} />
+        <DashboardUploadFilesCompletedButtonContainer />
 
       </>
     )
