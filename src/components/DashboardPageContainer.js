@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import setDashboardReportActionCreator from '../actions/setDashboardReportActionCreator'
 import fetchAllFinishedSurveysActionCreator from '../actions/fetchAllFinishedSurveysActionCreator'
-import DashboardComponent from './DashboardComponent'
 
 
 class DashboardPageContainer extends Component {
@@ -32,9 +31,6 @@ class DashboardPageContainer extends Component {
     const { isAuthenticated, finishedSurveys } = this.props
 
     return (
-      <DashboardComponent
-        isAuthenticated={isAuthenticated}
-        finishedSurveys={finishedSurveys} />
     )
   }
 }
