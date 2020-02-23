@@ -5,6 +5,7 @@ import fetchAllFinishedSurveysActionCreator from '../actions/fetchAllFinishedSur
 import DashboardAuthComponent from './DashboardAuthComponent'
 import DashboardNoSurveysComponent from './DashboardNoSurveysComponent'
 import DashboardFinishedSurveysComponent from './DashboardFinishedSurveysComponent'
+import DashboardUploadFilesContainer from './DashboardUploadFilesContainer'
 
 class DashboardPageContainer extends Component {
   constructor(props) {
@@ -30,11 +31,14 @@ class DashboardPageContainer extends Component {
   }
 
   render() {
-    const { isAuthenticated, finishedSurveys } = this.props
+    const { isAuthenticated, isDashboardFileUploads, finishedSurveys } = this.props
     let component = null
 
     if (isAuthenticated) {
-      if (finishedSurveys && finishedSurveys.length > 0) {
+      if (isDashboardFileUploads) {
+        component = <DashboardUploadFilesContainer />
+      }
+      else if (finishedSurveys && finishedSurveys.length > 0) {
         component = <DashboardFinishedSurveysComponent />
       }
       else {
@@ -60,7 +64,8 @@ const mapStateToProps = (state) => {
     isAuthenticated: state.authReducer.isAuthenticated,
     userSurveyId: state.dashboardReducer.userSurveyId,
     userId: state.authReducer.user.id,
-    finishedSurveys: state.dashboardReducer.finishedSurveys || []
+    finishedSurveys: state.dashboardReducer.finishedSurveys || [],
+    isDashboardFileUploads: true
   }
 
   return props
