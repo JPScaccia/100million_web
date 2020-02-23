@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Field } from 'redux-form'
+import { Form } from 'redux-form'
 import ComponentConsts from '../consts/ComponentConsts'
 import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
 
