@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from "react-router-dom"
 import util from 'util'
-import nextSurveyPageActionCreator from '../actions/nextSurveyPageActionCreator'
-import saveSurveyAnswersActionCreator from '../actions/saveSurveyAnswersActionCreator'
-import setSurveyAnswerActionCreator from '../actions/setSurveyAnswerActionCreator'
-import finishSurveyActionCreator from '../actions/finishSurveyActionCreator'
+import nextSurveyPageActionCreator from '../../actions/nextSurveyPageActionCreator'
+import saveSurveyAnswersActionCreator from '../../actions/saveSurveyAnswersActionCreator'
+import setSurveyAnswerActionCreator from '../../actions/setSurveyAnswerActionCreator'
+import finishSurveyActionCreator from '../../actions/finishSurveyActionCreator'
 import SurveySheetsComponent from './SurveySheetsComponent'
 
 

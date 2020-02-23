@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { withRouter } from "react-router-dom"
 import Levels from 'react-activity/lib/Levels'
 import 'react-activity/lib/Levels/Levels.css'
-import '../css/surveys.css'
+import '../../css/surveys.css'
 
 class SurveyScoringContainer extends Component {
   constructor(props) {

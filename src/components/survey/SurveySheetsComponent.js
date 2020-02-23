@@ -1,7 +1,7 @@
 import React from 'react'
 import SurveySheetIntroComponent from './SurveySheetIntroComponent'
 import SurveySheetMatrixComponent from './SurveySheetMatrixComponent'
-import '../css/surveys_sheets.css'
+import '../../css/surveys_sheets.css'
 
 
 const SurveySheetsComponent = (props) => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import '../css/surveys.css'
-import '../css/surveys_select.css'
+import '../../css/surveys.css'
+import '../../css/surveys_select.css'
 
 
 const SurveySelect2Component = (props) => {

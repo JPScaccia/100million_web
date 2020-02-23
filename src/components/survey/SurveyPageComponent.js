@@ -4,7 +4,7 @@ import SurveySelectContainer from './SurveySelectContainer'
 import SurveySelect2Container from './SurveySelect2Container'
 import SurveySheetsContainer from './SurveySheetsContainer'
 import SurveyScoringContainer from './SurveyScoringContainer'
-import SurveyStage from '../consts/SurveyStage'
+import SurveyStage from '../../consts/SurveyStage'
 
 
 const SurveyPageComponent = (props) => {
@@ -14,19 +14,19 @@ const SurveyPageComponent = (props) => {
   switch (surveyStage) {
     case SurveyStage.Auth:
       component = <SurveyAuthContainer />
-    break
+      break
 
     case SurveyStage.Select:
       component = <SurveySelect2Container />
-    break
+      break
 
     case SurveyStage.Sheets:
       component = <SurveySheetsContainer />
-    break
+      break
 
     case SurveyStage.Scoring:
       component = <SurveyScoringContainer />
-    break
+      break
   }
 
   return (

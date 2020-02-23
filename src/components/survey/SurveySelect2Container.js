@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import fetchChooseYourOwnAdventureActionCreator from '../actions/fetchChooseYourOwnAdventureActionCreator'
-import fetchSurveyActionCreator from '../actions/fetchSurveyActionCreator'
-import startSurveyActionCreator from '../actions/startSurveyActionCreator'
+import fetchChooseYourOwnAdventureActionCreator from '../../actions/fetchChooseYourOwnAdventureActionCreator'
+import fetchSurveyActionCreator from '../../actions/fetchSurveyActionCreator'
+import startSurveyActionCreator from '../../actions/startSurveyActionCreator'
 import SurveySelect2Component from './SurveySelect2Component'
 
 

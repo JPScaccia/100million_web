@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../css/surveys.css'
+import '../../css/surveys.css'
 
 
 const SurveyAuthComponent = (props) => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import SurveyPageComponent from './SurveyPageComponent'
-import SurveyStage from '../consts/SurveyStage'
+import SurveyStage from '../../consts/SurveyStage'
 
 
 class SurveyPageContainer extends Component {

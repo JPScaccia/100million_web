@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { reduxForm, SubmissionError } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
-import fetchAllSurveysActionCreator from '../actions/fetchAllSurveysActionCreator'
-import fetchSurveyActionCreator from '../actions/fetchSurveyActionCreator'
-import startSurveyActionCreator from '../actions/startSurveyActionCreator'
+import ComponentConsts from '../../consts/ComponentConsts'
+import fetchAllSurveysActionCreator from '../../actions/fetchAllSurveysActionCreator'
+import fetchSurveyActionCreator from '../../actions/fetchSurveyActionCreator'
+import startSurveyActionCreator from '../../actions/startSurveyActionCreator'
 import SurveySelectComponent from './SurveySelectComponent'
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Form, FormSection, Field } from 'redux-form'
-import ComponentConsts from '../consts/ComponentConsts'
-import SelectField from './form/SelectField'
-import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
+import ComponentConsts from '../../consts/ComponentConsts'
+import SelectField from '../form/SelectField'
+import RemoteSubmitButtonComponent from '../RemoteSubmitButtonComponent'
 
 
 const SurveySelectComponent = (props) => {
