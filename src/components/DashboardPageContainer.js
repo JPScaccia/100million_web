@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import setDashboardReportActionCreator from '../actions/setDashboardReportActionCreator'
 import fetchAllFinishedSurveysActionCreator from '../actions/fetchAllFinishedSurveysActionCreator'
-
+import DashboardAuthComponent from './DashboardAuthComponent'
+import DashboardNoSurveysComponent from './DashboardNoSurveysComponent'
+import DashboardFinishedSurveysComponent from './DashboardFinishedSurveysComponent'
 
 class DashboardPageContainer extends Component {
   constructor(props) {
@@ -29,8 +31,24 @@ class DashboardPageContainer extends Component {
 
   render() {
     const { isAuthenticated, finishedSurveys } = this.props
+    let component = null
+
+    if (isAuthenticated) {
+      if (finishedSurveys && finishedSurveys.length > 0) {
+        component = <DashboardFinishedSurveysComponent />
+      }
+      else {
+        component = <DashboardNoSurveysComponent />
+      }
+    }
+    else {
+      component = <DashboardAuthComponent />
+    }
 
     return (
+      <div>
+        {component}
+      </div>
     )
   }
 }
