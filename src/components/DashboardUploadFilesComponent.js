@@ -29,17 +29,12 @@ const DashboardUploadFilesComponent = (props) => {
               <tbody>
                 <tr className="dashboard_table_row">
                   <td>
-                  </td>
-                  <td>
                     <div id="formError">
                       {error}
                     </div>
                   </td>
                 </tr>
                 <tr className="dashboard_table_row">
-                  <td className="dashboard_form_fieldLabel">
-                    File
-                </td>
                   <td>
                     <Field
                       name="filename"
