@@ -4,6 +4,8 @@ import { reduxForm } from 'redux-form'
 import ComponentConsts from '../consts/ComponentConsts'
 //import uploadFilesActionCreator from '../actions/uploadFilesActionCreator'
 import DashboardUploadFilesComponent from './DashboardUploadFilesComponent'
+import DashboardUploadFilesCompletedButtonContainer from './DashboardUploadFilesCompletedButtonContainer'
+
 
 class DashboardUploadFilesContainer extends Component {
   constructor(props) {
@@ -22,10 +24,18 @@ class DashboardUploadFilesContainer extends Component {
     const { error, handleSubmit, submitting } = this.props
 
     return (
-      <DashboardUploadFilesComponent
-        onSubmit={handleSubmit(this.handleUpload)}
-        submitting={submitting}
-        error={error} />
+      <>
+        <DashboardUploadFilesComponent
+          onSubmit={handleSubmit(this.handleUpload)}
+          submitting={submitting}
+          error={error} />
+
+        <DashboardUploadFilesCompletedButtonContainer
+          onSubmit={handleSubmit(this.handleUpload)}
+          submitting={submitting}
+          error={error} />
+
+      </>
     )
   }
 }

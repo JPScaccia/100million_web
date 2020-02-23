@@ -22,13 +22,12 @@ const dashboardReducer = (state = initialState, action) => {
       }
       break
 
-    case ActionConsts.SetDashboardReport: {
+    case ActionConsts.SetDashboardReport:
       return {
         ...state,
         userSurveyId: action.userSurveyId
       }
-      return state
-    }
+      break
 
     case ActionConsts.FetchAllFinishedSurveys:
       if (action.subType === ActionConsts.AsyncStart) {
@@ -52,6 +51,13 @@ const dashboardReducer = (state = initialState, action) => {
       return {
         ...state,
         isDashboardFileUploads: true
+      }
+      break
+
+    case ActionConsts.UploadFilesCompleted:
+      return {
+        ...state,
+        isDashboardFileUploads: false
       }
       break
 

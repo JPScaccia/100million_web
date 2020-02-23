@@ -10,7 +10,8 @@ const ComponentConsts = Object.freeze({
   "AccountFormComponent": "AccountFormComponent",
   "AccountPasswordFormComponent": "AccountPasswordFormComponent",
   "UploadFileButtonFormComponent": "UploadFileButtonFormComponent",
-  "DashboardUploadFileFormComponent": "DashboardUploadFileFormComponent"
+  "DashboardUploadFileFormComponent": "DashboardUploadFileFormComponent",
+  "UploadFilesCompletedButtonFormComponent": "UploadFilesCompletedButtonFormComponent"
 })
 
 export default ComponentConsts

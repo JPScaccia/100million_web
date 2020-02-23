@@ -19,7 +19,8 @@ const ActionConsts = Object.freeze({
   "UpdateAccount": "UpdateAccount",
   "SetDashboardReport": "SetDashboardReport",
   "FetchChooseYourOwnAdventure": "FetchChooseYourOwnAdventure",
-  "SetUploadFile": "SetUploadFile"
+  "SetUploadFile": "SetUploadFile",
+  "UploadFilesCompleted": "UploadFilesCompleted"
 })
 
 export default ActionConsts
