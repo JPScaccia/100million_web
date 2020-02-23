@@ -12,6 +12,7 @@ class UploadFileInputField extends Component {
     return (
       <div>
         <input type="file"
+          // style={{ color: 'transparent' }}
           onChange={onChange}
           data-allowed-file-extensions={dataAllowedFileExtensions}
         />

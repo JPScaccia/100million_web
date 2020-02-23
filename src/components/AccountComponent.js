@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, FormSection, Field } from 'redux-form'
 import ComponentConsts from '../consts/ComponentConsts'
-import InputField from './InputField'
+import InputField from './form/InputField'
 import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
 import util from 'util'
 import { createTextMask } from 'redux-form-input-masks'
@@ -24,14 +24,14 @@ const AccountComponent = (props) => {
         Account
       </h2>
 
-      <p>Personal details<br/></p>
+      <p>Personal details<br /></p>
 
       <div className="form">
         <div className="formError">
           {error}
         </div>
 
-        <Form onSubmit={ onSubmit }>
+        <Form onSubmit={onSubmit}>
           <FormSection name="user">
             <div>
               <Field
@@ -80,7 +80,7 @@ const AccountComponent = (props) => {
           </FormSection>
           <RemoteSubmitButtonComponent
             formName={ComponentConsts.AccountFormComponent}
-            disabled={ submitting }
+            disabled={submitting}
             buttonText={"Save changes"} />
         </Form>
 

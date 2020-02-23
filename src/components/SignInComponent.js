@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, FormSection, Field } from 'redux-form'
 import ComponentConsts from '../consts/ComponentConsts'
-import InputField from './InputField'
+import InputField from './form/InputField'
 import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
 import '../css/signin.css'
 import '../css/signinform.css'

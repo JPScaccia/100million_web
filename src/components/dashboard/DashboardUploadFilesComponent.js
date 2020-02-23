@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Field } from 'redux-form'
 import ComponentConsts from '../../consts/ComponentConsts'
-import UploadFileInputField from '../UploadFileInputField'
+import UploadFileInputField from '../form/UploadFileInputField'
 import RemoteSubmitButtonComponent from '../RemoteSubmitButtonComponent'
 // import '../css/dashboard.css'
 // import '../css/dashboardform.css'

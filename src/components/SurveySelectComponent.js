@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, FormSection, Field } from 'redux-form'
 import ComponentConsts from '../consts/ComponentConsts'
-import SelectField from './SelectField'
+import SelectField from './form/SelectField'
 import RemoteSubmitButtonComponent from './RemoteSubmitButtonComponent'
 
 
@@ -10,9 +10,9 @@ const SurveySelectComponent = (props) => {
 
   return (
     <div>
-      <p>Please select your survey.<br/></p>
+      <p>Please select your survey.<br /></p>
 
-      <Form onSubmit={ onSubmit }>
+      <Form onSubmit={onSubmit}>
         <FormSection name="survey">
           <Field
             name="id"
@@ -20,7 +20,7 @@ const SurveySelectComponent = (props) => {
             <option
               key={-1}
               value={-1}
-              >
+            >
               Select a survey...
             </option>
             {surveys.map(survey => {
@@ -35,13 +35,13 @@ const SurveySelectComponent = (props) => {
           </Field>
         </FormSection>
         <div>
-        {error && <strong>{error}</strong>}
+          {error && <strong>{error}</strong>}
         </div>
-        <br/>
+        <br />
 
         <RemoteSubmitButtonComponent
           formName={ComponentConsts.SelectSurveyFormComponent}
-          disabled={ submitting }
+          disabled={submitting}
           buttonText={'Start'} />
       </Form>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Form, FormSection, Field } from 'redux-form'
-import SelectField from '../SelectField'
+import SelectField from '../form/SelectField'
 import '../../css/dashboard_report.css'
 
 const DashboardSelectFinishedSurveyComponent = (props) => {
