@@ -65,7 +65,7 @@ const mapStateToProps = (state) => {
     userSurveyId: state.dashboardReducer.userSurveyId,
     userId: state.authReducer.user.id,
     finishedSurveys: state.dashboardReducer.finishedSurveys || [],
-    isDashboardFileUploads: true
+    isDashboardFileUploads: state.dashboardReducer.isDashboardFileUploads
   }
 
   return props

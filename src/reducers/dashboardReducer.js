@@ -20,7 +20,7 @@ const dashboardReducer = (state = initialState, action) => {
       else if (action.subType === ActionConsts.AsyncError) {
         return state
       }
-    break
+      break
 
     case ActionConsts.SetDashboardReport: {
       return {
@@ -46,10 +46,17 @@ const dashboardReducer = (state = initialState, action) => {
           error: action.error
         }
       }
-    break
+      break
+
+    case ActionConsts.SetUploadFile:
+      return {
+        ...state,
+        isDashboardFileUploads: true
+      }
+      break
 
     default:
-    return state
+      return state
   }
 }
 
