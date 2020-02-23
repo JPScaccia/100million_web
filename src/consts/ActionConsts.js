@@ -20,7 +20,8 @@ const ActionConsts = Object.freeze({
   "SetDashboardReport": "SetDashboardReport",
   "FetchChooseYourOwnAdventure": "FetchChooseYourOwnAdventure",
   "SetUploadFile": "SetUploadFile",
-  "UploadFilesCompleted": "UploadFilesCompleted"
+  "UploadFilesCompleted": "UploadFilesCompleted",
+  "UploadFiles": "UploadFiles"
 })
 
 export default ActionConsts
